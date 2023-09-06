@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "composite": true,
+    "paths": {
+      "@lib/*": ["./src/lib/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@components/*": ["./src/components/*"],
+      "@canvas_components/*": ["./src/canvas_components/*"],
+      "@state/*": ["./src/state/*"],
+      "@data/*": ["./src/data/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@routes/*": ["./src/routes/*"]
+    }
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "src",
+    "global.d.ts",
+    "vite.config.ts",
+    "src/config.ts"  ],
+  "exclude": ["node_modules", "plugins", "public"]
+}
